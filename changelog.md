@@ -1,3 +1,7 @@
+## v2.5.0
+
++ Add support for Laravel 11
+
 ## v2.4.0
 
 + Bump simfoni-php and php unit versions
