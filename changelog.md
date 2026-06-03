@@ -1,3 +1,7 @@
+## v4.1.0
+
++ AB#123820 Add support for Laravel 13
+
 ## v4.0.1
 
 + Use explicitly nullable types to support PHP 8.4.
