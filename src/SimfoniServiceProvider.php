@@ -60,7 +60,7 @@ class SimfoniServiceProvider extends ServiceProvider
      * @param $middleware
      * @return void
      */
-    public function registerMiddleware($middleware)
+    public function registerMiddleware($middleware): void
     {
         $kernel = $this->app[Kernel::class];
 
@@ -79,7 +79,7 @@ class SimfoniServiceProvider extends ServiceProvider
     {
         if (route_contains('async') || route_contains('api')) {
             if ($exception instanceof ValidationException) {
-                return JsonResponse::create([
+                return new JsonResponse([
                     'message' => $exception->getMessage(),
                     'errors' => $exception->getValidationErrors()
                 ], $exception->getCode());

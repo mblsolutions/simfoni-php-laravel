@@ -1,6 +1,7 @@
 ## v4.1.0
 
 + AB#123820 Add support for Laravel 13
++ Fix minor changes
 
 ## v4.0.1
 
