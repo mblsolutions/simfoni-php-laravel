@@ -27,12 +27,6 @@ class SimfoniLaravel
      */
     public static function webhookRoutes(array $options = [])
     {
-        $defaultOptions = [
-            'namespace' => '\MBLSolutions\SimfoniLaravel\App\Http\Controllers',
-        ];
-
-        $options = array_merge($defaultOptions, $options);
-
         Route::group($options, static function () {
 
             Route::post('/simfoni/webhook', [WebhookController::class, 'webhook'])->name('simfoni.webhook');
